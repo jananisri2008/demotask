@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple E-shopping Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">E-Shopping</a>
+        <!--<i class='bx bx-shopping-bag' id="cart-icon"></i>-->
+        <a href="home.html">Home</a>
+        <a href="ship.html">Shipping</a>
+        <button onclick="loadProduct()">Load Products</button>
+      </div>
+    </header>
+    <div id="eshopping">
+      <section id="shop-container">
+        <h2 class="section-title">Shop Products</h2>
+        <div id="shop-content"></div>
+      </section>
+      <section id="cart-container">
+        <h2 class="cart-title">Cart</h2>
+        <div class="cart-content">
+          <ul id="cart-items"></ul>
+          <p>Total: ₹<span id="total-price">0</span></p>
+          <p>Items cart: <span id="cart-count">0</span></p>
+          <!--<label for="amt">Price</label>
+               <input type="text" id="amt"value="200"><br>
+               <label for="qty">Quantity</label>
+               <input type="number" id="qty"><br>
+               <label for="tot">Total</label>
+               <input type="textbox" id="tot"><br>
+               <button onclick="calculate()">Submit</button>
+               <button onclick="order()" class="btn-buy">Buy Now</button>-->
+        </div>
+      </section>
+    </div>
+
+     <!-- <script src="script.js"></script>  -->
+    <!--<script src="logic.js"></script>-->
+    <script src="eshop.js"></script>
+  </body>
+</html>

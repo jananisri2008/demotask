@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple E-shopping Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">E-Shopping</a>
+        <!--<i class='bx bx-shopping-bag' id="cart-icon"></i>-->
+        <a href="home.html">Home</a>
+        <a href="shipping.html">Shipping</a>
+        <button onclick="loadProduct()">Load Products</button>
+      </div>
+    </header>
+    <div id="eshipping">
+      <section class="ship-container">
+        <h2 class="section-title">Shipping Info</h2>
+        <!-- <div id="shop-content"></div> -->
+        <form method="post" name="sform">
+        <label for="fname">FirstName: </label>
+        <input type="text" name="fname" required>
+        <label for="lname">LastName: </label>
+        <input type="text" name="lname"  required><br>
+        <label for="add">Address: </label>
+        <input type="textarea" name="add"  required><br>
+        <label for="city">City: </label>
+        <input type="text" name="city"  required><br>
+        <label for="state">State</label>
+        <input type="text" name="state" required><br>
+        <label for="pincode">Pincode: </label>
+        <input type="text" name="pincode"  required><br>
+        <label for="phno">Phone No: </label>
+        <input type="tel" name="phno"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        <div class="shipbtn">
+        <!-- <input type="submit" value="Submit" onclick="ship()"> -->
+        </div>
+        </form>
+
+      </section>
+      <section class="pay-container">
+        <h2 class="cart-title">Payment Info</h2>
+        <!-- <div class="cart-content">
+          <ul id="cart-items"></ul>
+          </div> -->
+          <form method="post" name="pform">
+          <label for="cno">Cart No :</label>
+          <input type="text" name="cno" required><br>
+          <label for="cname">Cart Name: </label>
+          <input type="text" name="cname" required><br>
+          <label for="cv">CV: </label>
+          <input type="text" name="cv" required><br>
+          <label for="exp">Exprie Date: </label>
+          <input type="text" name="edate" required><br>
+          </form>
+
+        </section>
+        <div class="coutbtn">
+            <!-- <input type="submit" value="Check Out" onclick="checkout()"> -->
+             <a href="#" value="CheckOut" onclick="checkout()">CheckOut</a>
+            </div>
+    </div>
+    
+        
+
+     <script src="script.js"></script> 
+    <!--<script src="logic.js"></script>-->
+  </body>
+</html>
